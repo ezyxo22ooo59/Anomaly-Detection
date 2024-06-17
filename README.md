@@ -79,7 +79,7 @@ The dataset used in this project, inpatientCharges.csv, contains various feature
 ### Project Aspect
 This project addresses a critical need in the healthcare sector: detecting anomalies in payment data to identify potential fraud, billing errors, and other irregularities. By applying unsupervised learning models, the project provides a robust approach to anomaly detection without relying on labeled data. This is particularly valuable in real-world scenarios where labeled data may be scarce or unavailable.
 
-Several aspects of this project stand out:
+Several aspects of this project:
 
 Comprehensive Approach:
 - The project combines multiple unsupervised learning techniques and thorough data analysis to detect anomalies in healthcare payments.
@@ -139,3 +139,82 @@ Model Evaluation:
 - Compare results from different models to determine the most effective approach for their data.
 
 In conclusion, this project exemplifies the effective application of unsupervised learning to detect anomalies in healthcare payments, providing valuable insights and tools that can be leveraged by other practitioners in the field.
+
+
+
+## Unsupervised Model Project: Anomaly Detection in Credit Card Transactions
+
+### Background and Usage
+In the realm of financial transactions, particularly those involving credit cards, the detection of anomalies is crucial to identify fraudulent activities, billing errors, and other irregularities. This project focuses on developing and enhancing features from a dataset containing credit card transactions to facilitate anomaly detection. The dataset, purchase_credit_card.csv, includes various transaction details such as dates, amounts, merchants, and cardholder information.
+
+### Project Aspect
+The objective of this project was to create robust features that facilitate the detection of anomalies in credit card transactions. Given the vast amount of transaction data, identifying patterns and irregularities manually is impractical. By leveraging feature engineering and unsupervised learning techniques, this project aims to enhance the efficiency and accuracy of anomaly detection in financial transactions. The insights gained can help financial institutions in preventing fraud, improving security, and maintaining trust with their customers.
+
+Several aspects of this project:
+Comprehensive Feature Engineering:
+- The project goes beyond basic feature extraction, creating nuanced features that capture various dimensions of transaction behavior.
+
+Use of Ratios and Comparisons:
+- The use of ratios and comparisons to averages and medians provides a deeper understanding of the data, helping to highlight potential anomalies.
+
+Practical Application:
+- The project addresses a real-world problem with significant implications for financial security and fraud prevention.
+
+Transferability:
+- The methods and code are designed to be easily transferable to other datasets, making it useful for a wide range of anomaly detection tasks.
+
+### Key Results
+The project involves several key steps:
+
+1. Data Import and Initial Exploration:
+- The dataset was loaded using pandas and the initial structure was explored.
+- The dataset consists of 442,458 records with 11 columns.
+
+2. Data Preparation:
+- Column names were standardized for ease of access.
+- Additional columns were created for Year, Month, Week_Number, and Day_of_Week based on transaction dates.
+- Descriptive statistics provided an overview of transaction amounts, highlighting potential outliers.
+
+3. Feature Engineering:
+- Feature 1: Ratio of Amount Spending to Mean Spending by Merchant Category:
+  - Calculated the mean spending by each agency and merchant category.
+  - Created a feature representing the ratio of each transaction amount to the mean spending.
+- Feature 2: Ratio of Amount Spending to Median Spending by Merchant Category:
+  - Similar to Feature 1, but using the median spending amount.
+- Feature 3: Month Average by Merchant Category:
+  - Calculated the average month of transactions for each agency and merchant category to identify seasonal patterns.
+- Feature 4: Ratio of Month Average by Merchant Category:
+  - Ratio of each transaction month to the average month for the same merchant category.
+- Feature 5: Month Median by Merchant Category:
+  - Similar to Feature 3, but using the median month.
+- Feature 6: Ratio of Month Median by Merchant Category:
+  - Ratio of each transaction month to the median month for the same merchant category.
+- Feature 7: Spend Amount Mean for Each User:
+  - Calculated the mean spending amount for each cardholder.
+- Feature 8: Ratio of Spend Amount Mean for Each User:
+  - Ratio of each transaction amount to the mean spending amount for the same cardholder.
+- Feature 9: Spend Amount Median for Each User:
+  - Calculated the median spending amount for each cardholder.
+- Feature 10: Ratio of Spend Amount Median for Each User:
+  - Ratio of each transaction amount to the median spending amount for the same cardholder.
+- Feature 11: Spend Amount Max for Each User:
+  - Calculated the maximum spending amount for each cardholder to identify unusually large transactions.
+- Feature 12: Spend Amount Min for Each User:
+  - Calculated the minimum spending amount for each cardholder to identify unusually small or negative transactions.
+- Feature 13: Spend Amount Mean for Each Agency:
+  - Calculated the mean spending amount for all transactions under each agency.
+- Feature 14: Spend Amount Median for Each Agency:
+  - Calculated the median spending amount for all transactions under each agency.
+- Feature 15: Spend Amount Max for Each Agency:
+  - Calculated the maximum spending amount for all transactions under each agency to identify unusually large transactions.
+
+In conclusion, this project exemplifies the effective application of feature engineering to enhance anomaly detection in financial transactions, providing valuable insights and tools that can be leveraged by other practitioners in the field.
+
+
+
+
+
+
+
+
+
