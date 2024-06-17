@@ -211,8 +211,34 @@ The project involves several key steps:
 In conclusion, this project exemplifies the effective application of feature engineering to enhance anomaly detection in financial transactions, providing valuable insights and tools that can be leveraged by other practitioners in the field.
 
 
+## Time Series Analysis Project
 
+### Background and Usage
+Time series analysis is a critical component in data science and analytics, particularly for understanding trends, patterns, and anomalies in sequential data. This project focuses on analyzing electricity consumption data using multiple time series forecasting and anomaly detection techniques. The dataset consists of hourly electricity consumption readings from the American Electric Power (AEP) company, covering various periods. The techniques employed include Simple Moving Average (SMA), Exponential Smoothing, Seasonal-Trend Decomposition, and Prophet.
 
+### Project Aspect
+The primary goal of this project was to explore and compare different time series analysis techniques, identify their strengths and weaknesses, and demonstrate their applicability in real-world scenarios. By applying these methods to electricity consumption data, the project aimed to:
+- Understand the underlying patterns and trends in electricity usage.
+- Detect anomalies that could indicate irregularities or unusual consumption behavior.
+- Provide actionable insights for energy management and forecasting future consumption.
+This project also serves as an educational tool, showcasing the practical implementation of various time series techniques in Python. It is valuable for both learning purposes and practical applications in fields like energy management, finance, and any domain involving sequential data.
+
+Each of these methods serves a specific purpose:
+1. Simple Moving Average (SMA): Averages a fixed number of past data points to smooth out short-term fluctuations and highlight longer-term trends.
+2. Exponential Smoothing: Similar to SMA but assigns exponentially decreasing weights to older data points, making it more responsive to recent changes.
+3. Seasonal-Trend Decomposition: Decomposes the time series into trend, seasonal, and residual components, providing a comprehensive view of the data’s structure.
+4. Prophet: A robust forecasting tool developed by Facebook, designed to handle time series data with strong seasonal effects and several seasons of historical data.
+
+### Code Usability
+Here’s how others can utilize the code:
+
+- Data Preparation: Import and preprocess their own time series data similar to the provided example.
+- Applying Techniques: Follow the provided code to apply SMA, Exponential Smoothing, Seasonal-Trend Decomposition, and Prophet to their data.
+- Anomaly Detection: Use the defined methods to detect anomalies by identifying data points that fall outside the predicted intervals or boundaries.
+- Visualization: Generate plots to visualize trends, seasonal components, and anomalies, aiding in better data interpretation and decision-making.
+To get started, users can clone the project repository, install the necessary Python packages (prophet, statsmodels, matplotlib, etc.), and follow the instructions to run the analysis on their data.
+
+Overall, this project not only provides insights into electricity consumption patterns but also serves as a versatile framework for analyzing any time series data, making it a valuable resource for anyone interested in data science and analytics.
 
 
 
